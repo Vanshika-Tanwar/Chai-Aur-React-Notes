@@ -1,1 +1,5 @@
-Why hooks?
+Why hooks?/What are hooks? Hooks are pre-made/implemented functions which carry out a single/specific task, single responsibilities
+How useState works? it is a react hook which returns an array with 0th index elem as current state variable and 1th index as a method to update that state variable
+as soon as counter value is changed anywhere, react changes counter value in the UI everywhere in the whole webPage through useState
+in better words:
+useState is a React hook used to manage state within functional components. It returns an array containing two elements: the current state variable and a function to update that state variable. When the state variable changes, React automatically rerenders the component and any other components that depend on that state. This ensures that the updated state is reflected throughout the entire webpage, maintaining consistency across the user interface.

@@ -8,13 +8,17 @@ function App() {
   //let counter = 0
   const addValue = () => {
     //counter = counter + 1
-    setCounter(counter+1)
-    console.log("clicked add", counter)
+    if (counter < 20){
+      setCounter(counter+1)
+      console.log("clicked add", counter)
+    }
   }
 
   const decreaseValue = () => {
-    setCounter(counter-1)
-    console.log("clicked decrease", counter)
+    if (counter > 0){
+      setCounter(counter-1)
+      console.log("clicked decrease", counter)
+    }
   }
 
   return (

@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-      <h1>Chai Aur React</h1>
+      <h1>Chai Aur React | Vanshika Tanwar</h1>
       <h2>Counter value: {counter}</h2>
       <button onClick={addValue}>Add value {counter}</button>
       <br />

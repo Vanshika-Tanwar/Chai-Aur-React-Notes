@@ -1,12 +1,12 @@
 import React from 'react'
 import {Link, NavLink} from 'react-router-dom'
-
+//Link inplace of a tag, why? as there's no concept of page reloading, NavLink for additional features
 export default function Header() {
     return (
         <header className="shadow sticky z-50 top-0">
             <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-                    <Link to="/" className="flex items-center">
+                    <Link to="/" className="flex items-center"> {/* to in place of href */}
                         <img
                             src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
                             className="mr-3 h-12"
@@ -43,6 +43,7 @@ export default function Header() {
                                 </NavLink>
                             </li>
                             <li>
+                                {/* isActive compares & checks with url */}
                                 <NavLink
                                 to="/about"
                                     className={({isActive}) =>

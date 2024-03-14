@@ -7,7 +7,7 @@ function Layout() {
   return (
     <>
     <Header/>
-    <Outlet />
+    <Outlet /> {/* uses layout as base yet changes content */}
     <Footer />
     </>
   )
